@@ -14,7 +14,7 @@
 # limitations under the License.
 project(launcher CXX)
 
-add_executable(nucleus WIN32 src/main.cxx)
+add_executable(nucleus WIN32 src/main.cxx src/app.rc)
 
 target_include_directories(nucleus PRIVATE ${EasyHook_INCLUDE_DIR})
 target_link_libraries(nucleus ${EasyHook_LIBRARY})
